@@ -31,8 +31,6 @@
         </style>
     </head>
     <body>
-        <h1>This page will reload every 10 minutes.</h1>
-        <p>Last reloaded at: <span id="time"></span></p>
         <h1>Parcel Tracking Numbers</h1>
         <table>
             <thead>
@@ -76,6 +74,15 @@
         
             </tbody>
         </table>
+    
+    <p>Last reloaded at: <span id="time"></span></p>
+
+
+    <script>
+        // Display the current time
+        document.getElementById('time').textContent = new Date().toLocaleTimeString();
+    </script>
+    
     </body>
     </html>
     
