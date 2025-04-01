@@ -1,94 +1,127 @@
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="600"> <!-- Reload every 10 minutes (600 seconds) -->
+<!DOCTYPE html>
+<html>
 
-        <title>Parcel Tracking</title>
-        <style>
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 20px 0;
-            }
-            th, td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: left;
-            }
-            th {
-                background-color: #f2f2f2;
-            }
-            a {
-                color: #1a73e8;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Parcel Tracking Numbers</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Contact</th>
-                    <th>Tracking In</th>
-                    <th>Tracking Out</th>
-                </tr>
-            </thead>
-            <tbody>
+
+
+<head>
+    <title>Track Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Track Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>TYPE</th>
+                <th>DATE</th>
+                <th>CLIENT</th>
+                <th>CLINIC</th>
+                <th>TRACK IN</th>
+                <th>TRACK OUT</th>
+            </tr>
+        </thead>
+        <tbody>
+  
+            <tr>
+                <td>SALES</td>
+                <td>03/03/25</td>
+                <td>Simmone Bull</td>
+                <td>Coolmore Australia</td>
+                <td><a href=" - " target="_blank"> - </a></td>
+                <td><a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=398736838" target="_blank">https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=398736838</a></td>
+            </tr>
     
             <tr>
+                <td>SALES</td>
+                <td>03/03/25</td>
+                <td>Michelle Monaghan</td>
+                <td>Lithgow Veterinary Hospital</td>
+                <td><a href=" - " target="_blank"> - </a></td>
+                <td><a href="https://www.fedex.com/fedextrack/?trknbr=772325865547" target="_blank">https://www.fedex.com/fedextrack/?trknbr=772325865547</a></td>
+            </tr>
+    
+            <tr>
+                <td>SERVICE</td>
+                <td>04/03/25</td>
+                <td>Belinda CROWE (Practice Manager)</td>
+                <td>Vets4Pets Northgates</td>
+                <td><a href="https://auspost.com.au/mypost/track/details/R535283031175335006140607" target="_blank">https://auspost.com.au/mypost/track/details/R535283031175335006140607</a></td>
+                <td><a href="https://auspost.com.au/mypost/track/details/99715838653801004572500" target="_blank">https://auspost.com.au/mypost/track/details/99715838653801004572500</a></td>
+            </tr>
+    
+            <tr>
+                <td>SERVICE</td>
+                <td>18/03/25</td>
                 <td>Jacqui Arnold</td>
+                <td>Actify You</td>
                 <td><a href="https://auspost.com.au/mypost/track/details/R232709021521491006140607" target="_blank">https://auspost.com.au/mypost/track/details/R232709021521491006140607</a></td>
                 <td><a href="https://auspost.com.au/mypost/track/details/99715977626201004572500" target="_blank">https://auspost.com.au/mypost/track/details/99715977626201004572500</a></td>
             </tr>
-        
+    
             <tr>
+                <td>PARTS</td>
+                <td>19/03/25</td>
+                <td></td>
+                <td></td>
+                <td><a href=" - " target="_blank"> - </a></td>
+                <td><a href="https://auspost.com.au/mypost/track/details/99716073784501004582501" target="_blank">https://auspost.com.au/mypost/track/details/99716073784501004582501</a></td>
+            </tr>
+    
+            <tr>
+                <td>FIBRE</td>
+                <td>19/03/25</td>
                 <td>Ben VAUTIER</td>
+                <td>Charlestown Cosmetic Medicine</td>
+                <td><a href=" - " target="_blank"> - </a></td>
+                <td><a href="https://auspost.com.au/mypost/track/details/99715979658601004572501" target="_blank">https://auspost.com.au/mypost/track/details/99715979658601004572501</a></td>
+            </tr>
+    
+            <tr>
+                <td>SERVICE</td>
+                <td>20/03/25</td>
+                <td>Ben VAUTIER</td>
+                <td>Charlestown Cosmetic Medicine</td>
                 <td><a href="https://auspost.com.au/mypost/track/details/R247759011563616006140600" target="_blank">https://auspost.com.au/mypost/track/details/R247759011563616006140600</a></td>
                 <td><a href="https://auspost.com.au/mypost/track/details/99715979658601004572501" target="_blank">https://auspost.com.au/mypost/track/details/99715979658601004572501</a></td>
             </tr>
-        
+    
             <tr>
-                <td>Ben Morrell</td>
-                <td><a href="https://auspost.com.au/mypost/track/details/R639904011567265006140607" target="_blank">https://auspost.com.au/mypost/track/details/R639904011567265006140607</a></td>
-                <td><a href="https://auspost.com.au/mypost/track/details/99715993061101004572502" target="_blank">https://auspost.com.au/mypost/track/details/99715993061101004572502</a></td>
-            </tr>
-        
-            <tr>
-                <td>Kathleen Zlotkowski</td>
-                <td><a href="https://auspost.com.au/mypost/track/details/99715955827401004572509" target="_blank">https://auspost.com.au/mypost/track/details/99715955827401004572509</a></td>
-                <td><a href="" target="_blank"></a></td>
-            </tr>
-        
-            <tr>
+                <td>SERVICE</td>
+                <td>22/03/25</td>
                 <td>Bridie McLoghlin</td>
+                <td>Edgar?s Mission</td>
                 <td><a href="https://auspost.com.au/mypost/track/details/R336479011650357006120607" target="_blank">https://auspost.com.au/mypost/track/details/R336479011650357006120607</a></td>
                 <td><a href="https://auspost.com.au/mypost/track/details/99716026641801004572505" target="_blank">https://auspost.com.au/mypost/track/details/99716026641801004572505</a></td>
             </tr>
-        
+    
             <tr>
-                <td>Lauren Elliott</td>
-                <td><a href="https://auspost.com.au/mypost/track/details/R340312001957987006140608" target="_blank">https://auspost.com.au/mypost/track/details/R340312001957987006140608</a></td>
-                <td><a href="" target="_blank"></a></td>
+                <td>SERVICE</td>
+                <td>24/03/25</td>
+                <td>Ben Morrell</td>
+                <td>Prime Podiatry - Earl David Louis</td>
+                <td><a href="https://auspost.com.au/mypost/track/details/R639904011567265006140607" target="_blank">https://auspost.com.au/mypost/track/details/R639904011567265006140607</a></td>
+                <td><a href="https://auspost.com.au/mypost/track/details/99715993061101004572502" target="_blank">https://auspost.com.au/mypost/track/details/99715993061101004572502</a></td>
             </tr>
-        
-            </tbody>
-        </table>
     
+        </tbody>
+    </table>
+
     <p>Last refresh: <span id="time"></span></p>
-
-
     <script>
-        // Display the current time
+        // Display time AND auto-refresh every 60 seconds
         document.getElementById('time').textContent = new Date().toLocaleTimeString();
+        setTimeout(() => location.reload(), 60000);
     </script>
-    
-    </body>
-    </html>
-    
+
+</body>
+</html>
+  
