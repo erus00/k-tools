@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .copy-btn {
+            margin-right: 5px;
+            padding: 2px 5px;
+            font-size: 12px;
+            cursor: pointer;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .copy-btn:hover {
+            background: #e0e0e0;
+        }
+        .copy-btn.copied {
+            background: #4CAF50;
+            color: white;
+        }
+        a.no-copy-link {
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Track Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>TYPE</th>
+                <th>DATE</th>
+                <th>CLIENT</th>
+                <th>CLINIC</th>
+                <th>TRACK IN</th>
+                <th>TRACK OUT</th>
+            </tr>
+        </thead>
+        <tbody>
+  
+            <tr>
+                <td>SALES</td>
+                <td>05/06/25</td>
+                <td>Lisa Shanahan</td>
+                <td>Greencross Vets Mortdale</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=177875105">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=177875105" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=177875105</a></td>
+            </tr>
+    
+            <tr>
+                <td>SERVICE</td>
+                <td>05/06/25</td>
+                <td>Leanne Murdoch</td>
+                <td>Victor Feet First</td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/R543806033212187006140606">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/R543806033212187006140606" target="_blank" >https://auspost.com.au/mypost/track/details/R543806033212187006140606</a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716743035101004572507">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716743035101004572507" target="_blank" >https://auspost.com.au/mypost/track/details/99716743035101004572507</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>05/06/25</td>
+                <td>Angela YANG</td>
+                <td>Healthy Steps Foot Clinic PTY LTD</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716743349201004300909">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716743349201004300909" target="_blank" >https://auspost.com.au/mypost/track/details/99716743349201004300909</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>05/06/25</td>
+                <td>Carly Whytcross</td>
+                <td>Carly Whytcross</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716744775201004582501">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716744775201004582501" target="_blank" >https://auspost.com.au/mypost/track/details/99716744775201004582501</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>06/06/25</td>
+                <td>Lauren Elliott</td>
+                <td>Melbourne Animal Physiotherapy</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716757918301004582501">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716757918301004582501" target="_blank" >https://auspost.com.au/mypost/track/details/99716757918301004582501</a></td>
+            </tr>
+    
+            <tr>
+                <td>SALES</td>
+                <td>12/06/25</td>
+                <td>Helen Maroulis</td>
+                <td>Papillon Skin Clinic</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=182664452">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=182664452" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=182664452</a></td>
+            </tr>
+    
+            <tr>
+                <td>SERVICE</td>
+                <td>12/06/25</td>
+                <td>Calyce Cross</td>
+                <td>Australia Zoo Wildlife Warriors Worldwide</td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=174684795">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=174684795" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=174684795</a></td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=182656819">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=182656819" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=182656819</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>12/06/25</td>
+                <td>Lisa Shanahan</td>
+                <td>Greencross Vets Mortdale</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716806024701004582504">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716806024701004582504" target="_blank" >https://auspost.com.au/mypost/track/details/99716806024701004582504</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>12/06/25</td>
+                <td>Mitchell Bassett</td>
+                <td>Bay Of Isles Chiropractic</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716814012901004300904">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716814012901004300904" target="_blank" >https://auspost.com.au/mypost/track/details/99716814012901004300904</a></td>
+            </tr>
+    
+            <tr>
+                <td>SALES</td>
+                <td>16/06/25</td>
+                <td>Dan O'Dea</td>
+                <td>VALLEY VIEW MEDICAL PTY LTD</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=184841946">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=184841946" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=184841946</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>16/06/25</td>
+                <td>Christopher McGrath</td>
+                <td>Geelong Oral and Maxillofacial Surgery</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716843282201004582506">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716843282201004582506" target="_blank" >https://auspost.com.au/mypost/track/details/99716843282201004582506</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>16/06/25</td>
+                <td>Sean Kristoffersen</td>
+                <td>Church Street Medical Practice</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=185003100">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=185003100" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=185003100</a></td>
+            </tr>
+    
+            <tr>
+                <td>SERVICE</td>
+                <td>18/06/25</td>
+                <td>Pamela Cowie</td>
+                <td>Canine Hydro</td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/R328380003595554006140609">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/R328380003595554006140609" target="_blank" >https://auspost.com.au/mypost/track/details/R328380003595554006140609</a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716873324501004572500">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716873324501004572500" target="_blank" >https://auspost.com.au/mypost/track/details/99716873324501004572500</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>18/06/25</td>
+                <td>Helen Maroulis</td>
+                <td>Papillon Skin Clinic</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=187096696">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=187096696" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=187096696</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>19/06/25</td>
+                <td>Dan O'Dea</td>
+                <td>VALLEY VIEW MEDICAL PTY LTD</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716881900601004582505">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716881900601004582505" target="_blank" >https://auspost.com.au/mypost/track/details/99716881900601004582505</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>19/06/25</td>
+                <td>Bruce Stevenson</td>
+                <td>Beverly Hills Chiropractic</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99716883970101004300909">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99716883970101004300909" target="_blank" >https://auspost.com.au/mypost/track/details/99716883970101004300909</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>30/06/25</td>
+                <td>Helen Maroulis</td>
+                <td>Papillon Skin Clinic</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99717000925501004582501">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99717000925501004582501" target="_blank" >https://auspost.com.au/mypost/track/details/99717000925501004582501</a></td>
+            </tr>
+    
+            <tr>
+                <td>SALES</td>
+                <td>02/07/25</td>
+                <td>Monica Jane Chinchilla</td>
+                <td>CQ Canine Hydrotherapy and Rehab</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=196562609">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=196562609" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=196562609</a></td>
+            </tr>
+    
+            <tr>
+                <td>SERVICE</td>
+                <td>02/07/25</td>
+                <td>Emily SHAW</td>
+                <td>Western Skin Institute</td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/R333999013839127006140601">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/R333999013839127006140601" target="_blank" >https://auspost.com.au/mypost/track/details/R333999013839127006140601</a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99717027599001004572503">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99717027599001004572503" target="_blank" >https://auspost.com.au/mypost/track/details/99717027599001004572503</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>02/07/25</td>
+                <td>Jan Harrison</td>
+                <td>Jans Canine Therapy</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99717022802201004582502">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99717022802201004582502" target="_blank" >https://auspost.com.au/mypost/track/details/99717022802201004582502</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>02/07/25</td>
+                <td>Charles Kuntz</td>
+                <td>Southpaws Specialty Surgery for Animals</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=196926578">Copy</button>
+                   <a href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=196926578" target="_blank" >https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=196926578</a></td>
+            </tr>
+    
+            <tr>
+                <td>PARTS</td>
+                <td>02/07/25</td>
+                <td>Genevieve Liebich</td>
+                <td>Genevieve Liebich</td>
+                <td>
+                   <a href=" - " target="_blank" class="no-copy-link"> - </a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99717022858901004300906">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99717022858901004300906" target="_blank" >https://auspost.com.au/mypost/track/details/99717022858901004300906</a></td>
+            </tr>
+    
+            <tr>
+                <td>SERVICE</td>
+                <td>03/07/25</td>
+                <td>Barbra Ward</td>
+                <td>Geelong Veins Skin And Laser</td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/R310279023924077006140609">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/R310279023924077006140609" target="_blank" >https://auspost.com.au/mypost/track/details/R310279023924077006140609</a></td>
+                <td><button class="copy-btn" data-tracking="https://auspost.com.au/mypost/track/details/99717041562301004582505">Copy</button>
+                   <a href="https://auspost.com.au/mypost/track/details/99717041562301004582505" target="_blank" >https://auspost.com.au/mypost/track/details/99717041562301004582505</a></td>
+            </tr>
+    
+        </tbody>
+    </table>
+
+    <p>Last data updated: 04/07/2025 21:20:42</p>
+    <p>Last page refresh: <span id="loadTime"></span></p>
+    <script>
+        // Show load time once
+        document.getElementById('loadTime').textContent = 
+            new Date().toLocaleDateString('en-GB', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            }).replace(',', '');
+
+        // Copy button functionality
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('copy-btn')) {
+                const trackingNumber = event.target.getAttribute('data-tracking');
+                const button = event.target;
+                
+                navigator.clipboard.writeText(trackingNumber).then(() => {
+                    button.textContent = 'Copied!';
+                    button.classList.add('copied');
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                        button.classList.remove('copied');
+                    }, 2000);
+                }).catch(err => {
+                    // Fallback for browsers without Clipboard API
+                    const textarea = document.createElement('textarea');
+                    textarea.value = trackingNumber;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    
+                    button.textContent = 'Copied!';
+                    button.classList.add('copied');
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                        button.classList.remove('copied');
+                    }, 2000);
+                });
+            }
+        });
+
+        // Auto-refresh every 10 minutes (600000ms)
+        setTimeout(() => location.reload(), 600000);
+    </script>
+</body>
+</html>
+  
