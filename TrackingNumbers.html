@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .copy-btn {
+            margin-right: 5px;
+            padding: 2px 5px;
+            font-size: 12px;
+            cursor: pointer;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .copy-btn:hover {
+            background: #e0e0e0;
+        }
+        .copy-btn.copied {
+            background: #4CAF50;
+            color: white;
+        }
+        a.no-copy-link {
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Track Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>TYPE</th>
+                <th>DATE</th>
+                <th>CLIENT</th>
+                <th>CLINIC</th>
+                <th>TRACK IN</th>
+                <th>TRACK OUT</th>
+            </tr>
+        </thead>
+        <tbody>
+  
+            <tr>
+                <td>#N/A</td>
+                <td>#N/A</td>
+                <td>#N/A</td>
+                <td>#N/A</td>
+                <td>
+                   <a href="#N/A" target="_blank" class="no-copy-link">#N/A</a></td>
+                <td>
+                   <a href="#N/A" target="_blank" class="no-copy-link">#N/A</a></td>
+            </tr>
+    
+        </tbody>
+    </table>
+
+    <p>Last data updated: 11/11/2026 13:20:38</p>
+    <p>Last page refresh: <span id="loadTime"></span></p>
+    <script>
+        // Show load time once
+        document.getElementById('loadTime').textContent = 
+            new Date().toLocaleDateString('en-GB', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            }).replace(',', '');
+
+        // Copy button functionality
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('copy-btn')) {
+                const trackingNumber = event.target.getAttribute('data-tracking');
+                const button = event.target;
+                
+                navigator.clipboard.writeText(trackingNumber).then(() => {
+                    button.textContent = 'Copied!';
+                    button.classList.add('copied');
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                        button.classList.remove('copied');
+                    }, 2000);
+                }).catch(err => {
+                    // Fallback for browsers without Clipboard API
+                    const textarea = document.createElement('textarea');
+                    textarea.value = trackingNumber;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    
+                    button.textContent = 'Copied!';
+                    button.classList.add('copied');
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                        button.classList.remove('copied');
+                    }, 2000);
+                });
+            }
+        });
+
+        // Auto-refresh every 10 minutes (600000ms)
+        setTimeout(() => location.reload(), 600000);
+    </script>
+</body>
+</html>
+  
